@@ -13,6 +13,10 @@
         {
             "name": "Llewellyn Falco",
             "email": "llewellyn.falco@gmail.com"
+        },
+        {
+            "name": "Francis Gauthier",
+            "email": "fgauthier@donetechno.com"
         }
     ],
     "autoload": {
