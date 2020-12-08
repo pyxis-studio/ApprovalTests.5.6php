@@ -6,7 +6,7 @@ use ApprovalTests\SystemUtil;
 
 class ClipboardReporter implements Reporter
 {
-    public static function getCommandLineFor(string $approvedFilename, string $receivedFilename, bool $isWindows)
+    public static function getCommandLineFor( $approvedFilename,  $receivedFilename,  $isWindows)
     {
         if ($isWindows) {
             return "move /Y \"$receivedFilename\" \"$approvedFilename\"";
@@ -21,7 +21,7 @@ class ClipboardReporter implements Reporter
         self::copyToClipboard($commandLine);
     }
 
-    public static function copyToClipboard(string $newClipboardText)
+    public static function copyToClipboard( $newClipboardText)
     {
         $clipboardCommand = SystemUtil::isWindows() ? "clip" : "pbclip";
         $cmd = "echo " . $newClipboardText . " | " . $clipboardCommand;

@@ -4,13 +4,13 @@ namespace ApprovalTests;
 
 class SystemUtil
 {
-    public static function isWindows(): bool
+    public static function isWindows()
     {
         // Based on http://php.net/manual/en/function.php-uname.php
         return strtoupper(substr(PHP_OS, 0, 3)) === 'WIN';
     }
 
-    public static function execInBackground(string $cmd)
+    public static function execInBackground( $cmd)
     {
         // Taken from http://php.net/manual/en/function.exec.php#86329
         if (self::isWindows()) {
@@ -20,7 +20,7 @@ class SystemUtil
         }
     }
 
-    public static function viewFile(string $filename)
+    public static function viewFile( $filename)
     {
         if (self::isWindows()) {
             pclose(popen("start /B \"needed title\" \"" . $filename . "\"", "r"));
