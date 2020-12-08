@@ -1,5 +1,5 @@
 {
-    "name": "donetechno/approval-tests",
+    "name": "donetechno/approval-tests-php5.6",
     "description": "Approval Testing for your legacy projects.",
     "type": "library",
     "homepage": "https://github.com/approvals/ApprovalTests.php",
