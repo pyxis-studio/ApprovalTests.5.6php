@@ -1,17 +1,22 @@
 {
-    "name": "approvals/approval-tests",
+    "name": "donetechno/approval-tests-php5.6",
     "description": "Approval Testing for your legacy projects.",
     "type": "library",
     "homepage": "https://github.com/approvals/ApprovalTests.php",
     "require": {
-        "phpunit/phpunit": ">=5.4.0",
-        "delight-im/str": "^2.4"
+        "php": "^5.6",
+        "delight-im/str": "^2.4",
+        "phpunit/phpunit": "^5"
     },
     "license": "Apache-2.0",
     "authors": [
         {
             "name": "Llewellyn Falco",
             "email": "llewellyn.falco@gmail.com"
+        },
+        {
+            "name": "Francis Gauthier",
+            "email": "fgauthier@donetechno.com"
         }
     ],
     "autoload": {
