@@ -4,6 +4,7 @@
     "type": "library",
     "homepage": "https://github.com/approvals/ApprovalTests.php",
     "require": {
+        "php": "^5.6",
         "delight-im/str": "^2.4",
         "phpunit/phpunit": "^5"
     },
